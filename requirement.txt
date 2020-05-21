@@ -1,0 +1,15 @@
+certifi==2020.4.5.1
+chardet==3.0.4
+click==7.1.1
+Flask==1.1.2
+gunicorn==20.0.4
+heroku==0.1.4
+idna==2.9
+itsdangerous==1.1.0
+Jinja2==2.11.2
+MarkupSafe==1.1.1
+python-dateutil==1.5
+requests==2.23.0
+urllib3==1.25.8
+Werkzeug==1.0.1
+youtube-transcript-api==0.3.1
