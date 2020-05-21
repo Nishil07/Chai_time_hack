@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+
+<div class="container">
+    <form action="/slot/{{store}}" method="POST">
+        <a class="btn" href="/slotarea">Back to Area</a>
+        <a class="btn" href="/">Back to Home</a>
+        <hr>
+            <h2>Choose a slot in store {{store}}</h2>
+            <select name="menu">
+                <option value="0">09:30 - 10:00</option>
+                <option value="1">10:00 - 10:30</option>            
+                <option value="2">10:30 - 11:00</option>            
+                <option value="3">11:00 - 11:30</option>            
+                <option value="4">11:30 - 12:00</option>            
+                <option value="5">12:00 - 12:30</option>              
+            </select>
+            <input type="submit" class=" btn" value="Enter">
+            <p>{{message}}</p>
+        </div>
+    </form>
+
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<form action="/add/{{user}}" method="POST">
+    <div class="container">
+       <input type="text" name="item" placeholder="item">
+       <input type="text" name="quantity" placeholder="quantity">
+       <input type="submit" class=" btn" value="Enter">
+   </div>
+</form>
+{% endblock %}

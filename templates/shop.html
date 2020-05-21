@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <form action="">
+        <a class="btn" href="/">Back to Home</a>
+        <hr>
+        <p>Your Current stock is: </p>
+        <ul>
+            {% for i in data %}
+            <li><strong>{{i}}</strong> - {{data[i] }}</li>
+            {% endfor %} 
+        </ul>
+        <hr>
+        <a class="btn" href="/update/{{user}}">Update Stock</a>
+        <a class="btn" href="/add/{{user}}">Add Item</a>
+    </form>
+</div>
+{% endblock %}

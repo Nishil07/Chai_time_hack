@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <form action="/arealist" method="POST">
+             <a href="/">Back</a>
+             <hr>
+             <h2>Select the Nearest Area :</h2>
+             <select name="menu" id="menu">
+                {% for o in data %}
+                <option value="{{ o }}">{{ o }}</option>
+                {% endfor %}               
+             </select>
+            <input type="submit" class=" btn" value="Enter">
+    </form>
+</div>
+{% endblock %}

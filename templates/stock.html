@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <form action="">
+            <a href="/storelist">Back to Area</a>
+            <hr>
+                {% for i in data %}
+                <li><strong>{{i}}</strong> - {{ data[i] }}</li>
+                {% endfor %} 
+            <hr>
+            <a href="/">Back to Home</a>
+        </form>
+    </div>
+{% endblock %}
+    

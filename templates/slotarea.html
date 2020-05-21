@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+
+<div class="container">
+    <form action="/slotarea" method="POST">
+        <a href="/">Back</a>
+        <hr>
+        <h2>Select your nearest area:</h2>
+            <select name="menu" id="menu">
+                {% for o in data %}
+                <option value="{{ o }}">{{ o }}</option>
+                {% endfor %}               
+            </select>
+            <input type="submit" class=" btn" value="Enter">
+    </form>
+</div>
+{% endblock %}

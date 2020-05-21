@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+
+
+<div class="container">
+    <form action="/shopkeeper" method="POST">
+        <a href="/">Back to Home</a>
+        <hr>
+        <h2>Enter your PIN:</h2>
+       <input type="text" name="pin" placeholder="PIN">
+       <input type="submit" class=" btn" value="Enter">
+    </form>
+</div>
+
+{% endblock %}

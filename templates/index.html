@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+
+<div class="container">
+    <form action="/" method="POST">
+        <h2>Select a Service:</h2>
+        <select name="menu" id="menu">
+           <option value="Availability of Stock">Availability of Stock</option>
+           <option value="Shopkeeper">Shopkeeper</option>
+           <option value="Slot booking">Slot booking</option>                 
+        </select>
+       <input type="submit" class=" btn" value="Enter">
+    </form>
+</div>
+
+{% endblock %}
