@@ -139,7 +139,7 @@ def slot(path):
 #
 #===================================================================================================================
 
-@app.route('/', methods=['POST','GET'])
+@app.route('/app', methods=['POST','GET'])
 def index():
     if request.method == 'POST':
         selected_option = request.form['menu']
