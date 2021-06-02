@@ -10,6 +10,6 @@ Jinja2==2.11.2
 MarkupSafe==1.1.1
 python-dateutil==1.5
 requests==2.23.0
-urllib3==1.25.8
+urllib3==1.26.5
 Werkzeug==1.0.1
 youtube-transcript-api==0.3.1
